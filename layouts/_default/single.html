@@ -15,8 +15,9 @@
                       <span class="tags">
                       {{ with .Params.tags }}
                       {{ if ge (len .) 1 }}
+                          Tags:
                           {{ range . }}
-                              <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+                              <a class=post-tags href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
                           {{ end }}
                       {{ end }}
                       {{ end}}

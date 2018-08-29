@@ -27,7 +27,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 table {
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 *, *:before, *:after {
@@ -35,7 +35,6 @@ table {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 /* Clearfix */
 
@@ -346,10 +345,10 @@ em, i {
 }
 
 .post h2.headline {
-    font: normal 13px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: -5px 0 0 0;
     color: #b2b9be;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1px;
     display: inline-block;
 }
@@ -363,6 +362,20 @@ em, i {
     letter-spacing: 2px;
     margin-top: 5px;
     display: block;
+}
+
+a.post-tags:hover {
+    color: #5694f1;
+}
+
+a.post-tags {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    border: 1px solid #a6a6a6;
+    padding: 2px;
+    text-align: center;
+    font-size: 80%;
+    color: #666;
 }
 
 #post-list h2 {
@@ -431,13 +444,14 @@ th, td {
     text-align: left;
     padding-right: 20px;
     vertical-align: top;
+    border: 1px solid #dadadc;
 }
 
 table td, td {
     border-spacing: none;
     border-style: solid;
     padding: 10px 15px;
-    border-width: 1px 0 0 0;
+    border: 1px solid #dadadc;
 }
 
 tr>td {
