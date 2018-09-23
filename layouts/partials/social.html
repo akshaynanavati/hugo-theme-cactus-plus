@@ -7,7 +7,7 @@
         <i class="fa fa-envelope"></i>
     </a>
     {{ else }}
-    <a class="symbol" href="{{ $val }}">
+    <a class="symbol" href="{{ $val }}" target="_blank">
         <i class="fa fa-{{ $key }}"></i>
     </a>
     {{ end }}
@@ -17,7 +17,7 @@
 
 	{{ $iconStyle := .Site.Params.socialIconStyle }}
     {{ range $key, $val := .Site.Social }}
-    <a class="symbol" href="{{ $val }}">
+    <a class="symbol" href="{{ $val }}" target="_blank">
         {{ $iconStyle }}{{ if eq $key "twitter" }}twitterbird{{ else }}{{ $key }}{{ end }}
     </a>
     {{ end }}
